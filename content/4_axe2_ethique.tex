@@ -1,0 +1,104 @@
+\section{Cadre éthique et réglementaire}
+\label{sec:4_axe2_ethique}
+
+Les fondements techniques et scientifiques de l'\gls{ia} générative, examinés dans la section précédente, posent la question des conditions d'usage responsable dans un cadre institutionnel contraint. L'\gls{aiact} européen, entré en vigueur en août 2024, classe l'éducation comme secteur à haut risque et impose des obligations de conformité aux établissements d'enseignement supérieur~\cite{aiact2024}. Parallèlement, la définition même de l'intégrité académique se trouve redéfinie à l'ère de l'\gls{ia} générative, tandis que l'impact environnemental de ces technologies, longtemps négligé, s'impose désormais dans les préoccupations institutionnelles~\cite{pascal2025ia}. Cette section analyse ces trois dimensions complémentaires du cadre éthique et réglementaire : les obligations légales issues du \gls{rgpd} et de l'\gls{aiact}, la redéfinition de l'intégrité académique et les limites des détecteurs automatisés, et l'empreinte environnementale de l'inférence~\cite{rgpd2016,insp2025charte}.
+
+\subsection{Obligations réglementaires : RGPD et AI Act}
+
+L'éducation figure parmi les huit domaines à haut risque de l'\gls{aiact} (Annexe III, point 3). Pour un établissement comme Polytech Annecy-Chambéry, les implications pratiques sont significatives. Les systèmes d'\gls{ia} concernés incluent ceux destinés à déterminer l'accès ou l'affectation aux établissements, à évaluer les acquis d'apprentissage influençant l'orientation, et à surveiller les comportements pendant les examens~\cite{aiact2024}. En revanche, les projets pédagogiques internes et la recherche non commercialisée bénéficient d'obligations allégées. La reconnaissance des émotions en contexte éducatif est explicitement interdite depuis février 2025 (Article 5), car jugée attentatoire aux libertés fondamentales.
+
+\begin{table}[htbp]
+\centering
+\caption{Calendrier d'application de l'AI Act pour l'enseignement supérieur}
+\label{tab:calendrier_aiact}
+\begin{tabular}{lcp{9cm}}
+\toprule
+\textbf{Date} & \textbf{Statut} & \textbf{Obligations} \\
+\midrule
+Février 2025 & Effectif & Interdiction reconnaissance émotions (Art. 5) + AI Literacy obligatoire (Art. 4) \\
+Août 2025 & Effectif & Règles modèles GPAI + Désignation autorités nationales \\
+Août 2026 & À venir & Systèmes haut risque éducation + Transparence (Art. 50) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\medskip
+
+L'obligation d'AI Literacy (Article 4), applicable depuis février 2025, impose de former personnels et étudiants aux enjeux de l'\gls{ia} — une exigence déjà effective que tout établissement doit documenter. L'échéance d'août 2026 pour les systèmes à haut risque en éducation impose une préparation structurée avec évaluation des risques et traçabilité des décisions.
+
+L'Article 14 de l'\gls{aiact} définit cinq capacités que le superviseur humain doit pouvoir exercer :
+
+\begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=1.5cm]
+  \item Comprendre les capacités et limitations du système
+  \item Rester conscient du biais d'automatisation
+  \item Interpréter correctement les résultats
+  \item Décider de ne pas utiliser le système ou contester ses résultats
+  \item Intervenir dans le système ou l'interrompre
+\end{enumerate}
+
+Pour Polytech, cela signifie que l'enseignant conserve toujours le dernier mot sur toute évaluation assistée par \gls{ia}, avec une traçabilité des décisions. Cette supervision humaine n'est pas une simple recommandation mais une obligation réglementaire pour tout système éducatif recourant à l'\gls{ia} dans des processus d'évaluation ou d'orientation~\cite{pascal2025ia}.
+
+La \gls{cnil} a publié en février 2025 de nouvelles recommandations clarifiant l'articulation entre le \gls{rgpd} et l'\gls{aiact}. Dès lors que des données personnelles sont traitées, les deux cadres réglementaires s'appliquent simultanément~\cite{cnil2025enseignant,rgpd2016}. L'Analyse d'Impact relative à la Protection des Données (AIPD) peut être fusionnée avec l'évaluation des droits fondamentaux exigée par l'\gls{aiact} (Article 27) pour les déployeurs publics. Pour Polytech, cet enjeu revêt une acuité particulière : les projets industriels en partenariat avec des entreprises comportent fréquemment des clauses de confidentialité strictes, et le cadre du \gls{men} précise qu'aucune donnée confidentielle ou à caractère personnel ne peut être saisie dans les outils \gls{ia} grand public~\cite{men2025cadre}.
+
+Au-delà des obligations légales descendantes, la question de l'intégrité académique impose une redéfinition consensuelle de la fraude à l'ère de l'\gls{ia} générative. Les établissements français et internationaux convergent vers un consensus opérationnel, tandis que les détecteurs automatisés révèlent des limites techniques qui conduisent à leur abandon progressif par les universités de référence.
+
+\subsection{Intégrité académique et détection automatisée}
+
+Les revues systématiques récentes analysant les politiques des meilleures universités mondiales convergent vers un constat : les détecteurs sont inadaptés, et la refonte des évaluations constitue la seule réponse durable aux défis posés par l'\gls{ia} générative~\cite{cotton2024chatgpt}. Un consensus émergent se cristallise autour de quatre critères définissant la fraude académique liée à l'\gls{ia}, repris dans les chartes des établissements de référence.
+
+\begin{definitionbox}[Fraude académique liée à l'IA]
+Quatre critères convergents :
+(1) \textbf{utilisation non déclarée} d'outils IA,
+(2) \textbf{utilisation non autorisée} quand explicitement interdite,
+(3) \textbf{présentation comme original} de contenu substantiellement généré,
+(4) \textbf{absence de vérification critique} des résultats produits.
+
+Distinction clé : IA comme \textbf{assistance} (remue-méninges, correction) vs
+IA comme \textbf{substitution} (génération substantielle).
+\end{definitionbox}
+
+\bigskip
+
+En France, l'Observatoire IA Formation d'Aix-Marseille Université centralise les chartes universitaires françaises. L'Université d'Orléans a publié en octobre 2024 la première charte universitaire française complète sur l'usage de l'\gls{ia} en enseignement. Paris 1, Lille, Toulouse, Montpellier et Grenoble Alpes ont depuis adopté leurs propres versions. Le modèle d'Aix-Marseille Université intègre la définition de la fraude dans les règlements des Modalités de Contrôle des Connaissances (M3C) : « L'utilisation d'outils d'\gls{ia} est considérée comme une fraude passible de poursuites disciplinaires, à moins qu'elle ne soit expressément autorisée »~\cite{demoes2025charte}. Au niveau international, ETH Zurich a adopté en décembre 2024 une approche proactive basée sur trois principes (Responsabilité, Transparence, Équité) avec déclaration obligatoire de l'usage. Stanford laisse les instructeurs fixer leurs propres politiques par cours avec des modèles standardisés. Oxford et Cambridge interdisent l'usage en évaluations sommatives sauf autorisation explicite.
+
+Face à cette convergence des chartes universitaires, les détecteurs automatisés d'\gls{ia} révèlent des limites techniques qui remettent en cause leur utilité. L'étude RAID, benchmark le plus complet à ce jour portant sur 6,2 millions de textes, démontre que la plupart des détecteurs deviennent inefficaces quand le taux de faux positifs est contraint sous 0,5\%. Les techniques de contournement simples (homoglyphes, paraphrase, espaces) réduisent drastiquement la détection~\cite{perkins2024detection}.
+
+\begin{table}[htbp]
+\centering
+\caption{Taux de faux positifs documentés des principaux détecteurs d'IA}
+\label{tab:faux_positifs_detecteurs}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Outil} & \textbf{Faux positifs} & \textbf{Faux négatifs} & \textbf{Source} \\
+\midrule
+Turnitin AI & <1\% (off.) / 1,28-50\% (ét.) & ~15-33\% & Ét. indép. \\
+GPTZero & <1\% (off.) / variable & ~32\% & Ét. indép. \\
+ZeroGPT & 20,51\% & ~32\% & Ét. indép. \\
+Originality.AI & <1-3\% & ~2\% & RAID \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\medskip
+
+L'étude de Stanford révèle un biais discriminatoire majeur : 61,22\% des essais TOEFL (locuteurs non-natifs) sont classés comme générés par \gls{ia}, contre une quasi-parfaite précision pour les élèves américains natifs. Les détecteurs se basent sur la perplexité textuelle, pénalisant les textes simples ou formels. Les raisons techniques de cet échec sont multiples : les détecteurs reposent sur deux métriques — perplexité (prévisibilité du texte) et burstiness (variabilité des structures) — qui ne distinguent pas entre écriture \gls{ia}, écriture humaine formelle, écriture de non-natifs ou écriture technique. De plus, les détecteurs entraînés sur un modèle spécifique (GPT-3.5) sont inefficaces pour détecter d'autres modèles (Llama, Claude), créant une course aux armements permanente.
+
+Ces constats ont conduit de nombreux établissements de référence à abandonner les détecteurs. MIT, Vanderbilt, Johns Hopkins, Northwestern, UCLA, University of British Columbia, University of Toronto, Western University et University of Glasgow figurent parmi les institutions ayant désactivé la détection \gls{ia} Turnitin. Vanderbilt justifie cette décision par un calcul simple : un taux de faux positifs de 1\% équivaut à 750 étudiants potentiellement accusés à tort sur 75\,000 soumissions.
+
+Face à l'échec des détecteurs, le cadre \gls{aias}, traduit en plus de 30 langues et adopté par des centaines d'institutions, propose une alternative fondée sur la transparence plutôt que la surveillance. Il définit cinq niveaux d'usage : No AI (aucune \gls{ia} autorisée), AI-Assisted Ideation (remue-méninges assisté), AI-Assisted Editing (correction/reformulation), AI as Collaborator (génération partielle), Full AI/AI Exploration (génération complète assumée). La version révisée de décembre 2024 utilise une palette neutre supprimant la hiérarchie implicite et met l'accent sur la transparence du processus~\cite{perkins2024detection}. Ce cadre privilégie la déclaration d'usage sur la détection automatisée, alignant les pratiques pédagogiques sur les principes éthiques de responsabilité et de transparence.
+
+Outre les enjeux d'intégrité académique et de conformité réglementaire, l'usage massif de l'\gls{ia} générative soulève une dimension longtemps négligée : son impact environnemental. Contrairement à l'attention médiatique focalisée sur l'entraînement des modèles, c'est l'inférence — l'usage quotidien des outils par des millions d'utilisateurs — qui représente 80\% de l'empreinte carbone totale. Cette réalité impose de repenser les politiques de sobriété numérique des établissements.
+
+\subsection{Impact environnemental et sobriété numérique}
+
+L'inférence représente 80\% de l'impact environnemental total des modèles \gls{ia}, contrairement à l'attention médiatique focalisée sur l'entraînement~\cite{insp2025charte,pascal2025ia}. Cette répartition a des implications majeures pour la politique de sobriété d'un établissement : ce ne sont pas les quelques entraînements de modèles locaux qui pèsent le plus lourd, mais l'accumulation des millions de requêtes quotidiennes vers ChatGPT, Claude ou Gemini par les étudiants et personnels.
+
+La consommation énergétique varie fortement selon les modèles : GPT-4o consomme environ 0,43 Wh par requête courte et approximativement 2 Wh pour une requête longue, Claude 3.7 Sonnet se positionne comme le plus éco-efficient, tandis que Gemini consomme environ 0,24 Wh pour une requête de longueur médiane~\cite{insp2025charte}. En revanche, les modèles de raisonnement (DeepSeek-R1, o3) consomment plus de 33 Wh par requête longue, soit 15 à 80 fois plus qu'une requête standard. À l'échelle mondiale, GPT-4o totalisant environ 700 millions de requêtes quotidiennes représente une consommation de 2,9 GWh d'électricité par jour, équivalant à la consommation annuelle de 35\,000 foyers américains.
+
+L'eau constitue un autre enjeu critique. L'entraînement de GPT-3 a nécessité 700\,000 litres d'eau évaporée pour le refroidissement des serveurs. En inférence, l'impact demeure significatif : environ 500 ml pour 20 à 50 requêtes ChatGPT, soit 519 ml pour un prompt de 100 mots (l'équivalent d'une bouteille). Les projections indiquent que, d'ici 2027, l'\gls{ia} pourrait consommer annuellement entre 4,2 et 6,6 milliards de m³ d'eau, soit quatre à six fois la consommation totale du Danemark.
+
+L'intensité carbone de l'électricité française (57 gCO2e/kWh grâce au mix nucléaire et renouvelable) est quatre à huit fois inférieure à celle des datacenters américains (240-429 gCO2e/kWh selon les États). Cet avantage structurel se traduit par des réductions d'émissions spectaculaires : l'entraînement de BLOOM (176 milliards de paramètres) en France a émis 25 tCO2e, contre 502 tCO2e pour GPT-3 aux États-Unis, soit vingt fois moins. Deux acteurs français offrent des alternatives souveraines performantes : Scaleway (100\% renouvelable depuis 2017) et OVHcloud (certifié SecNumCloud, objectif 100\% renouvelable 2027). Le rapport Taddei-Pascal recommande explicitement le développement de datacenters dédiés à l'inférence souveraine, réduisant à la fois la dépendance vis-à-vis des acteurs extra-européens et l'empreinte carbone~\cite{pascal2025ia}.
+
+Plusieurs outils en logiciel libre permettent de mesurer l'empreinte carbone des modèles \gls{ia} : CodeCarbon (bibliothèque Python temps réel), ML CO2 Impact Calculator (calculateur en ligne), Green Algorithms (méthodologie académique).
+
+Ce cadre éthique et réglementaire structuré — obligations \gls{aiact} et \gls{rgpd}, redéfinition de l'intégrité académique, prise en compte de l'impact environnemental — doit désormais être confronté aux pratiques réelles des acteurs de l'enseignement supérieur. La section suivante analyse les usages observés chez les étudiants, enseignants et personnels administratifs, à partir des enquêtes nationales et internationales les plus récentes.

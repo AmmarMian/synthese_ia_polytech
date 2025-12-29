@@ -5,6 +5,13 @@
 \usepackage[T1]{fontenc}
 \usepackage[francais]{babel}
 
+% Hyphenation and text justification
+\usepackage{hyphenat}  % Meilleur contrôle de l'hyphenation
+\hyphenpenalty=50      % Pénalité pour encourager les coupures de mots (défaut 50)
+\exhyphenpenalty=50    % Pénalité pour hyphens explicites
+\tolerance=2000        % Tolérance augmentée pour espacements (défaut 200)
+\setlength{\emergencystretch}{1.5em}  % Espace d'urgence si justification échoue
+
 
 % Geometry
 \usepackage[left=2cm, right=5cm, top=4cm, bottom=3cm]{geometry}
@@ -22,5 +29,21 @@
 \usepackage{array}     % Pour les colonnes p{} avec largeur fixe
 \usepackage{tikz}      % Pour les diagrammes et schémas
 \usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+\usepackage{tcolorbox}  % Pour les environnements de définition
+\usepackage{pgfplots}   % Pour les graphiques (tailles d'effet)
+\pgfplotsset{compat=1.18}
 \usepackage[acronym,nomain,toc]{glossaries}  % Pour la liste d'acronymes automatisée
 \makeglossaries
+
+% Définir environnement definitionbox minimaliste
+\newtcolorbox{definitionbox}[1][]{
+  colframe=black,
+  coltitle=white,
+  colback=white,
+  title=#1,
+  left=5pt, right=5pt, top=3pt, bottom=3pt,
+  boxsep=3pt,
+  arc=0pt,
+  boxrule=1pt,
+  titlerule=0pt
+}

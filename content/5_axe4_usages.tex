@@ -1,0 +1,90 @@
+\section{Pratiques et usages de l'IA générative}
+\label{sec:5_axe4_usages}
+
+Le cadre éthique et réglementaire analysé dans la section précédente définit les conditions d'usage responsable de l'\gls{ia} générative. Mais quelle est la réalité des pratiques dans l'enseignement supérieur français ? Les enquêtes nationales récentes — notamment celle de la Conférence des Grandes Écoles (n=5 074 étudiants) et le questionnaire ministériel (n=30 000 répondants) — permettent de dresser un état des lieux précis de l'adoption de l'\gls{ia} générative par les étudiants, enseignants-chercheurs et personnels administratifs~\cite{cge2024enquete,pascal2025ia}.
+
+\subsection{État des usages par public}
+
+Ces enquêtes nationales révèlent des écarts significatifs d'adoption entre les différents publics de l'enseignement supérieur. L'\gls{ia} générative est massivement adoptée par les étudiants, modérément par les enseignants-chercheurs, et peu par les personnels administratifs. Le tableau~\ref{tab:usages_publics} synthétise ces écarts sur cinq indicateurs clés.
+
+\begin{table}[htbp]
+\centering
+\caption{Usages de l'IA générative par public dans l'enseignement supérieur français}
+\label{tab:usages_publics}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Indicateur} & \textbf{Étudiants} & \textbf{Enseignants} & \textbf{BIATSS} \\
+\midrule
+Taux d'adoption global & 75\% (GE) / 99\% (Vinci) & 52\% & < 52\% \\
+Fréquence usage & 68\% hebdo, 30\% quotidien & 33\% hebdo, 19\% quotidien & Données limitées \\
+Outil principal & ChatGPT 98\% (78\% gratuit) & ChatGPT majoritaire & Données limitées \\
+Tâches clés & Recherche 55\%, Rédaction 56,7\% & Préparation cours, exercices & Cas usage flous (44\%) \\
+Frein principal & Non-déclaration 74\% & Manque formation 65\% & Peur emploi 72\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\medskip
+
+Chez les étudiants, l'adoption est massive : 75\% des étudiants des Grandes Écoles utilisent l'\gls{ia} générative, avec un écart notable entre écoles d'ingénieurs (71\%) et écoles de commerce (88\%). L'enquête Pôle Léonard de Vinci confirme cette tendance avec un taux de 99\% d'utilisateurs. Pourtant, cette adoption s'accompagne d'une anxiété éthique marquée : 65\% considèrent l'usage de l'\gls{ia} comme une forme de triche pour les devoirs, et 74\% ne déclarent pas leur usage par incertitude sur les règles autorisées. ChatGPT domine avec 98\% d'utilisateurs (dont 78\% en version gratuite, 22\% payante), suivi par DeepL pour la traduction (54\%), Microsoft Copilot (29\%) et Google Gemini (28\%). GitHub Copilot atteint 87\% d'usage chez les étudiants en informatique. Les tâches principales sont la recherche d'information (55\%), la rédaction de contenu (56,7\%), le résumé de documents (39,4\%) et la génération de code (36,3\% toutes filières confondues, 47,4\% chez les ingénieurs). Le frein majeur demeure la méfiance envers la fiabilité : 53\% sont préoccupés par les hallucinations et inexactitudes~\cite{cge2024enquete}.
+
+Les enseignants-chercheurs présentent une adoption sensiblement inférieure : 52\% utilisent l'\gls{ia} générative, contre 75\% des étudiants. Leur fréquence d'usage est également moindre : 33\% l'emploient plusieurs fois par semaine et 19\% quotidiennement, contre 68\% d'usage hebdomadaire chez les étudiants. Le frein critique identifié par les enquêtes françaises (Compilatio, FNEGE) est le manque de formation pratique : 65\% des non-utilisateurs invoquent ce facteur, tandis que 9\% déclarent ne pas connaître ces outils. L'absence de politique claire au sein des établissements constitue le second frein : 44\% des enseignants n'utilisent jamais ou rarement l'\gls{ia} par attentisme institutionnel. Un écart de perception majeur émerge également : 88\% des enseignants surestiment l'usage des étudiants, pensant que tous leurs devoirs sont générés par \gls{ia}, alimentant une défiance envers l'intégrité académique. Côté pratiques déclarées, 30\% des enseignants font utiliser l'\gls{ia} par les étudiants dans un cadre pédagogique (enseignement de l'usage, curiosité), tandis qu'ils l'emploient pour préparer leurs cours, créer des exercices, aider à l'évaluation et, en recherche, pour la rédaction d'articles, la traduction ou la génération de code~\cite{pascal2025ia}.
+
+Les personnels administratifs, techniques, bibliothèques, ingénierie, sociaux et santé (BIATSS) demeurent le public le moins documenté dans l'\gls{esr} français. Les données disponibles suggèrent un taux d'adoption nettement inférieur à celui des étudiants et enseignants. Les freins psychologiques sont massifs : 72\% sont inquiets de l'impact de l'\gls{ia} sur leur salaire, 45\% craignent pour la sécurité de leur emploi, 75\% manquent de confiance dans leurs compétences pour utiliser ces outils, et 80\% n'ont reçu aucune formation. Au plan organisationnel, 44\% estiment que l'\gls{ia} ne peut pas aider leur travail (cas d'usage flous pour leurs métiers), et seulement 28\% reçoivent un soutien actif de leur hiérarchie. L'absence d'outils fournis par les établissements constitue un frein majeur identifié par le questionnaire national. Ces freins cumulés entraînent un retrait de l'usage et une sous-utilisation du potentiel des outils \gls{ia} pour l'optimisation des tâches administratives~\cite{pascal2025ia}.
+
+Au-delà des écarts entre publics, les écoles d'ingénieurs présentent des spécificités disciplinaires marquées. Les usages, performances et risques de l'\gls{ia} générative varient fortement selon les filières : l'informatique enregistre une adoption massive avec des gains de productivité mesurables, la mécanique révèle des limites critiques en calculs numériques, et le génie civil impose une prudence extrême face aux enjeux de sécurité structurelle. Un enjeu transversal émerge également : la confidentialité des données industrielles.
+
+\subsection{Spécificités des écoles d'ingénieurs}
+
+Les disciplines d'ingénierie présentent des usages différenciés selon la nature des tâches : génération de code, calculs numériques complexes, ou respect de normes réglementaires. L'informatique affiche une adoption très avancée, tandis que le génie civil impose une prudence accrue par exigences de sécurité. Les études disponibles — recherches sur GitHub Copilot en informatique, étude Nature 2025 sur la mécanique (n=172 étudiants) et publications émergentes sur le génie civil — permettent de documenter ces spécificités.
+
+En informatique, le taux d'usage hebdomadaire atteint 87\%, le plus élevé de toutes les disciplines. Les outils dominants sont GitHub Copilot en tête, suivi de ChatGPT pour la génération de code, ainsi que Codewhisperer et Tabnine. Les recherches récentes sur GitHub Copilot (ICER 2025, Peng et al., 2023) mesurent des gains significatifs : les étudiants sont 34,9\% plus rapides avec l'assistance de l'\gls{ia}, l'efficacité globale des développeurs s'améliore de 55,8\%, 73\% des utilisateurs restent dans un état de flow optimal, et 87\% préservent leur énergie mentale lors du codage. Toutefois, des risques critiques sont identifiés : la dépendance cognitive croissante envers l'outil, l'acceptation de code généré sans vérification critique de sa logique ou de ses failles de sécurité, et un impact négatif sur les pratiques de pair programming, où la génération automatique réduit les échanges constructifs entre développeurs.
+
+En mécanique, une étude publiée dans Nature (2025) portant sur 172 étudiants de génie mécanique, avec 800 questions couvrant sept matières, compare les performances de trois modèles. Microsoft Copilot obtient 60,38\% de précision globale, Google Gemini 57,13\%, et ChatGPT 46,63\%. Le constat critique est unanime : ces modèles sont performants sur les questions théoriques (formules, clarification de concepts), mais échouent sur les calculs numériques complexes nécessitant des itérations ou des méthodes d'approximation. Les étudiants le perçoivent clairement : 62,2\% sont préoccupés par les réponses incorrectes, et 65,7\% rencontrent des difficultés à vérifier l'exactitude des résultats. Les tâches typiques d'usage incluent la formulation de concepts, la clarification théorique, la résolution d'exercices, et le débogage de scripts MATLAB ou Python.
+
+En génie civil, l'adoption demeure émergente, fortement freinée par les exigences réglementaires liées à la sécurité structurelle. Les risques critiques spécifiques incluent les hallucinations sur les normes réglementaires (Eurocodes européens, Documents Techniques Unifiés français), les erreurs de calculs de dimensionnement structurel potentiellement dangereuses, et l'engagement de la responsabilité professionnelle de l'ingénieur. La validation humaine experte systématique s'impose donc comme une obligation déontologique. Les usages émergents, adoptés avec prudence, concernent le design génératif pour l'exploration architecturale, la documentation de conformité réglementaire, la génération de métrés (Bill of Quantities) et la planification de projet~\cite{men2025cadre}.
+
+\bigskip
+
+\begin{definitionbox}[Confidentialité des données industrielles]
+« Ne jamais entrer de données confidentielles dans les outils d'IA publics » — Règle MIT
+
+\textbf{Enjeu transversal écoles d'ingénieurs} : Projets industriels, stages en entreprise, données clients comportent fréquemment clauses de confidentialité strictes. L'upload dans ChatGPT, Claude ou Gemini constitue une violation potentielle des accords de non-divulgation (\gls{nda}).
+
+\textbf{Lacune formation actuelle} : Enjeu peu abordé dans formations \gls{ia} malgré fréquence situations à risque~\cite{men2025cadre}.
+\end{definitionbox}
+
+\medskip
+
+Les usages disciplinaires documentés confirment le potentiel pédagogique de l'\gls{ia} générative, mais révèlent aussi des limites techniques et des risques professionnels non négligeables. Cette adoption différenciée s'explique par une série de freins psychologiques, organisationnels et institutionnels que les enquêtes nationales ont identifiés. L'analyse comparative des écoles d'ingénieurs et des écoles de commerce révèle par ailleurs un retard structurel de gouvernance dans les premières. Quels sont les leviers documentés pour accompagner efficacement l'appropriation de l'\gls{ia} générative ?
+
+\subsection{Freins, leviers et écarts structurels}
+
+Les enquêtes nationales et internationales convergent vers l'identification de freins récurrents à l'appropriation de l'\gls{ia} générative dans l'enseignement supérieur. Parallèlement, la littérature documente des leviers d'accompagnement dont l'efficacité a été mesurée. L'enquête CGE 2025 révèle un retard structurel préoccupant : les écoles d'ingénieurs accusent un déficit de gouvernance institutionnelle par rapport aux écoles de commerce, comme l'illustre le tableau~\ref{tab:ecarts_gouvernance}.
+
+\begin{table}[htbp]
+\centering
+\caption{Écarts de gouvernance IA : écoles d'ingénieurs vs écoles de commerce (CGE 2025)}
+\label{tab:ecarts_gouvernance}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Indicateur de gouvernance} & \textbf{Écoles ingénieurs} & \textbf{Écoles commerce} \\
+\midrule
+Gouvernance IA établie & 55\% & 89\% \\
+Autorisation usage en cours & 49\% & 79\% \\
+Adaptation des évaluations & 49\% & 82\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\medskip
+
+Chez les étudiants, trois freins majeurs émergent. L'incertitude sur les règles autorisées conduit 74\% d'entre eux à ne pas déclarer leur usage, générant un flou réglementaire anxiogène au sein des établissements. La peur de l'accusation de triche est omniprésente : 65\% considèrent l'\gls{ia} comme une forme de triche pour les devoirs, et le phénomène d'AI Guilt — une stigmatisation sociale par les pairs — amplifie cette anxiété. La méfiance envers la fiabilité technique demeure également significative : 53\% sont préoccupés par les hallucinations et inexactitudes. Enfin, le manque de formation à un usage éthique et critique de l'\gls{ia} laisse les étudiants démunis face aux enjeux d'intégrité académique~\cite{pascal2025ia}.
+
+Chez les enseignants-chercheurs, le manque de formation pratique sur des cas d'usage concrets constitue le frein premier : 65\% des non-utilisateurs l'invoquent. Les enquêtes françaises (Compilatio, FNEGE) révèlent que l'absence de politique claire au sein des établissements conduit 44\% des enseignants à n'utiliser jamais ou rarement l'\gls{ia}, par attentisme institutionnel. Les craintes liées à l'intégrité académique sont vives : 88\% surestiment l'usage des étudiants, pensant que tous leurs devoirs sont générés par \gls{ia}, créant une défiance généralisée. Le temps nécessaire à l'appropriation de ces outils, dans un contexte de charge de travail déjà élevée, constitue la première barrière pratique. Enfin, les préoccupations croissantes autour de la propriété intellectuelle en recherche freinent l'adoption dans les activités scientifiques~\cite{pascal2025ia}.
+
+Chez les personnels BIATSS, les freins psychologiques dominent : 72\% sont inquiets de l'impact de l'\gls{ia} sur leur salaire, et 45\% craignent pour la sécurité de leur emploi. Le manque de confiance dans leurs compétences touche 75\% des personnels, et 80\% n'ont reçu aucune formation. Au plan organisationnel, 44\% estiment que l'\gls{ia} ne peut pas aider leur travail, révélant des cas d'usage flous pour leurs métiers. Seulement 28\% des BIATSS reçoivent un soutien actif de leur hiérarchie, soulignant un déficit d'accompagnement managérial.
+
+Face à ces freins, les recherches convergent vers des leviers documentés dont l'efficacité a été mesurée. Pour les étudiants, les guidelines claires — politiques transparentes définissant précisément les usages autorisés et interdits — constituent le levier le plus efficace. La formation éthique intégrée aux enseignements, centrée sur l'intégrité académique et la citation des sources \gls{ia}, répond directement aux anxiétés identifiées. La création d'environnements de confiance, où les discussions sur l'usage de l'\gls{ia} sont ouvertes et sans jugement, réduit l'AI Guilt. Fait notable, 82\% des étudiants des Grandes Écoles se déclarent favorables à des formations sur l'\gls{ia}. Pour les enseignants-chercheurs, la formation pratique axée sur des cas d'usage concrets disciplinaires s'avère supérieure aux formations théoriques. Le peer learning via des "champions \gls{ia}" au sein des départements génère une adoption rapide documentée (60-70\% en quelques mois). Le soutien hiérarchique visible de la direction est critique : 43\% des initiatives échouent faute de sponsorship institutionnel. Les incitations (subventions projets pédagogiques innovants, reconnaissance dans les promotions) favorisent l'expérimentation. Pour les personnels BIATSS, la communication claire et rassurante sur l'emploi — expliquer le "pourquoi" de la transformation plutôt que l'imposer — réduit les résistances. Le soutien managérial actif, par des managers formés qui accompagnent plutôt qu'imposent, constitue le levier majeur. Les champions internes, ambassadeurs \gls{ia} dans chaque service, créent des dynamiques d'adoption pair-à-pair. Les quick wins — automatisation de tâches répétitives avec résultats immédiats visibles — légitiment l'investissement. Enfin, les espaces d'expérimentation sécurisés, où tester sans risque d'erreur publique, favorisent l'apprentissage~\cite{pascal2025ia,unesco2024competences}.
+
+Le diagnostic des usages, freins et leviers constitue le socle d'une politique institutionnelle cohérente. Mais au-delà des pratiques individuelles, la question de la gouvernance collective de l'\gls{ia} générative se pose avec acuité. Comment structurer l'émergence de ces technologies à l'échelle des établissements et des réseaux ? Quels modèles de gouvernance, quelles infrastructures souveraines, quelles stratégies de formation de masse permettent d'accompagner cette transformation ? La section suivante examine ces enjeux à l'échelle méso et macro-institutionnelle.
