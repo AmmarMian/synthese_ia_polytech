@@ -6,6 +6,7 @@
 
 \input{configuration.tex}
 \input{version.tex}
+\input{./content/glossary.tex}
 
 \begin{document}
 
@@ -34,10 +35,15 @@
 
   \newpage
 
+  \printglossary[type=\acronymtype,title=Acronymes et abréviations]
+
+  \newpage
+
   % All content
   \input{./content/0_abstract.tex}
   \input{./content/1_methodology.tex}
   \input{./content/2_axes_definition.tex}
+  \input{./content/3_axe1_fondements.tex}
 
   % Bibliography
   \bibliographystyle{IEEEtran} 

@@ -1,5 +1,6 @@
 
-% Fonts 
+% Fonts
+\usepackage[utf8]{inputenc}  % Pour les caractères UTF-8 (nécessaire pour références avec caractères spéciaux)
 \usepackage{ebgaramond-maths}
 \usepackage[T1]{fontenc}
 \usepackage[francais]{babel}
@@ -17,3 +18,9 @@
 \usepackage{xcolor}
 \usepackage[table]{xcolor}
 \usepackage{float}
+\usepackage{booktabs}  % Pour les tableaux académiques (\toprule, \midrule, \bottomrule)
+\usepackage{array}     % Pour les colonnes p{} avec largeur fixe
+\usepackage{tikz}      % Pour les diagrammes et schémas
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+\usepackage[acronym,nomain,toc]{glossaries}  % Pour la liste d'acronymes automatisée
+\makeglossaries
