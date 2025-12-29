@@ -180,13 +180,29 @@ cat > "$PROJECT_ROOT/.git/hooks/post-commit" <<'HOOK_EOF'
 #!/bin/bash
 # Post-commit hook to update commit hash in versions.json
 
+# Prevent infinite loop - check if we're already amending
+if [[ -n "$GIT_AMENDING" ]]; then
+    exit 0
+fi
+
 PROJECT_ROOT="$(git rev-parse --show-toplevel)"
+
+# Check if versions.json exists and has a pending commit
+if [[ ! -f "$PROJECT_ROOT/versions.json" ]]; then
+    exit 0
+fi
+
+# Check if the last entry has "pending" commit
+LAST_COMMIT=$(jq -r '.history[-1].commit' "$PROJECT_ROOT/versions.json" 2>/dev/null)
+if [[ "$LAST_COMMIT" != "pending" ]]; then
+    exit 0
+fi
 
 # Get actual commit hash
 COMMIT_HASH=$(git rev-parse HEAD)
 
-# Get commit message
-COMMIT_MSG=$(git log -1 --pretty=%B | head -n 1)
+# Get commit message (first line only to avoid JSON issues)
+COMMIT_MSG=$(git log -1 --pretty=%s)
 
 # Update the last entry in history with actual commit hash and message
 jq --arg commit "$COMMIT_HASH" \
@@ -198,7 +214,9 @@ mv "$PROJECT_ROOT/versions.json.tmp" "$PROJECT_ROOT/versions.json"
 
 # Amend the commit with updated versions.json
 git add "$PROJECT_ROOT/versions.json"
+export GIT_AMENDING=1
 git commit --amend --no-edit --no-verify >/dev/null 2>&1
+unset GIT_AMENDING
 
 exit 0
 HOOK_EOF
