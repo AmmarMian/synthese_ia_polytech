@@ -1,0 +1,33 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+*.synctex.gz
+*.synctex.gz(busy)
+
+# LaTeX temporary files
+*.backup
+*.tmp
+*.swp
+*~
+
+# Output PDF (optional - uncomment if you don't want to track PDFs)
+# *.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-*
+
+# Version tracking scripts backup files
+scripts/*.backup
+scripts/*.tmp
