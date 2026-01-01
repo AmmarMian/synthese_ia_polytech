@@ -1,5 +1,5 @@
 {
-  "current": "1.0.3",
+  "current": "1.0.4",
   "history": [
     {
       "version": "1.0.0",
@@ -24,6 +24,12 @@
       "date": "2025-12-29",
       "commit": "bd482b48249277693be5aebf008b49fa4743ba23",
       "message": "Prototype doc ok"
+    },
+    {
+      "version": "1.0.4",
+      "date": "2026-01-01",
+      "commit": "efccfaa269f07aeeec967b4c6da959f73f5fc8cf",
+      "message": "README + questionnaire"
     }
   ]
 }

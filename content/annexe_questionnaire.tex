@@ -1,0 +1,497 @@
+\appendix
+
+\section{Questionnaire : Usages de l'\gls{ia} générative à Polytech}
+\label{annexe:questionnaire}
+
+\subsection*{Note méthodologique}
+
+Ce questionnaire vise à documenter les usages réels de l'\gls{ia} générative au sein de Polytech Annecy-Chambéry, afin d'adapter les recommandations institutionnelles aux besoins spécifiques de chaque public (étudiants, enseignants-chercheurs, personnels administratifs et techniques). Quatre objectifs structurent cette enquête : (1) comparer les pratiques locales aux données nationales (n=30~000 répondants de l'enquête ministérielle), (2) identifier les besoins d'accompagnement différenciés par public, (3) repérer les champions \gls{ia} potentiels au sein des départements, et (4) documenter les enjeux spécifiques aux écoles d'ingénieurs (confidentialité des données industrielles, usage du code assisté par \gls{ia}, spécificités disciplinaires).
+
+La méthodologie repose sur trois piliers validés scientifiquement. Les items du questionnaire national sont repris intégralement pour garantir la comparabilité des résultats (sections A à E, tronc commun). Les échelles psychométriques validées internationalement sont intégrées : échelle d'usage académique de ChatGPT (Abbas et al., 2024, 8 items, $\alpha>0.70$), modèle UTAUT2 adapté à l'\gls{ia} (5 construits), et échelle d'auto-efficacité GSE-6AI (6 items). Enfin, des questions spécifiques aux écoles d'ingénieurs complètent le dispositif (section F, différenciée par public)~\cite{pascal2025ia,cge2024enquete,abbas2024harmful}.
+
+Le questionnaire adopte une architecture modulaire : un tronc commun de 42 items (sections A à E) pour tous les répondants, suivi d'une branche spécifique de 8 items selon le profil déclaré (section F), et d'une clôture commune (section G). La durée estimée de réponse est de 10 à 13 minutes. L'anonymat complet est garanti : aucune donnée personnelle identifiante n'est collectée. Les données agrégées serviront exclusivement à l'élaboration du plan d'action institutionnel. Un engagement de restitution des résultats aux participants est pris.
+
+\bigskip
+
+\subsection{Section A — Profil et contexte}
+
+\textbf{A1.} Vous êtes :
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Étudiant·e
+  \item Enseignant·e-chercheur·euse
+  \item Personnel administratif, technique, bibliothèque, ingénierie, social et santé (BIATSS)
+\end{itemize}
+
+\textbf{A2.} \textit{[Si Étudiant]} Dans quelle filière êtes-vous inscrit·e ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Informatique et Microélectronique des Systèmes Intelligents (IMSI)
+  \item Matériaux (MAT)
+  \item Mécanique (MEC)
+  \item Instrumentation, Automatique et Informatique (IAI)
+  \item Environnement, Bâtiment, Énergie (EBE)
+  \item Génie Biomédical (GBM)
+\end{itemize}
+
+\textbf{A3.} \textit{[Si Étudiant]} Vous êtes en :
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item 3\textsuperscript{e} année (1\textsuperscript{re} année cycle ingénieur)
+  \item 4\textsuperscript{e} année (2\textsuperscript{e} année cycle ingénieur)
+  \item 5\textsuperscript{e} année (3\textsuperscript{e} année cycle ingénieur)
+\end{itemize}
+
+\textbf{A4.} \textit{[Si Enseignant-chercheur]} Quelle est votre discipline principale d'enseignement ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Informatique et sciences du numérique
+  \item Mathématiques et modélisation
+  \item Physique et sciences de l'ingénieur
+  \item Mécanique et matériaux
+  \item Environnement et énergétique
+  \item Sciences humaines et sociales, langues
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\textbf{A5.} \textit{[Si BIATSS]} Quelle est votre fonction principale ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Administration (gestion, finances, RH)
+  \item Scolarité et relations étudiantes
+  \item Informatique et systèmes d'information
+  \item Ingénierie pédagogique
+  \item Bibliothèque et documentation
+  \item Technique et logistique
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\textbf{A6.} Connaissez-vous l'existence de règles ou de recommandations sur l'usage de l'\gls{ia} générative au sein de Polytech ou de l'\gls{usmb} ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, je connais les règles
+  \item Non, je ne connais pas les règles
+  \item Je ne sais pas s'il existe des règles
+\end{itemize}
+
+\medskip
+
+\subsection{Section B — Usage actuel de l'\gls{ia} générative}
+
+\textbf{B1.} Utilisez-vous des outils d'\gls{ia} générative (ChatGPT, Claude, Gemini, Copilot, etc.) ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui
+  \item Non $\rightarrow$ \textit{Passez à la question B9}
+\end{itemize}
+
+\textbf{B2.} Depuis combien de temps utilisez-vous l'\gls{ia} générative ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Moins de 3 mois
+  \item Entre 3 et 6 mois
+  \item Entre 6 mois et 1 an
+  \item Entre 1 an et 2 ans
+  \item Plus de 2 ans
+\end{itemize}
+
+\textbf{B3.} À quelle fréquence utilisez-vous l'\gls{ia} générative ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Jamais (je ne l'utilise plus)
+  \item Rarement (moins d'une fois par mois)
+  \item Occasionnellement (1 à 3 fois par mois)
+  \item Régulièrement (1 à 2 fois par semaine)
+  \item Fréquemment (plusieurs fois par semaine)
+  \item Quotidiennement
+\end{itemize}
+
+\textbf{B4.} Dans quel(s) contexte(s) utilisez-vous l'\gls{ia} générative ? \textit{(Plusieurs réponses possibles)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item \textit{[Étudiant]} Pour mes études (travaux, projets, révisions)
+  \item \textit{[Enseignant]} Pour préparer mes cours et mes supports pédagogiques
+  \item \textit{[Enseignant]} Pour mes activités de recherche
+  \item \textit{[BIATSS]} Pour mes tâches professionnelles administratives
+  \item Usage personnel (hors cadre professionnel/études)
+\end{itemize}
+
+\textbf{B5.} Quel est votre niveau de compétence auto-évalué dans l'utilisation de l'\gls{ia} générative ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Débutant (je découvre ces outils)
+  \item Intermédiaire (j'utilise les fonctions de base)
+  \item Avancé (je maîtrise l'ingénierie de prompts et les usages complexes)
+  \item Expert (je forme d'autres personnes à leur usage)
+\end{itemize}
+
+\textbf{B6.} Avez-vous déjà déclaré auprès d'un enseignant votre usage de l'\gls{ia} générative pour un travail académique ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, toujours
+  \item Oui, parfois
+  \item Non, jamais
+  \item Non concerné (je ne l'utilise pas pour les travaux académiques)
+\end{itemize}
+
+\textbf{B7.} Avez-vous reçu une formation à l'usage de l'\gls{ia} générative ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, une formation institutionnelle (Polytech, \gls{usmb})
+  \item Oui, une formation externe
+  \item Non, je suis autodidacte
+  \item Non, je n'ai reçu aucune formation
+\end{itemize}
+
+\textbf{B8.} Seriez-vous intéressé·e par une formation sur l'usage éthique et efficace de l'\gls{ia} générative ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, très intéressé·e
+  \item Oui, plutôt intéressé·e
+  \item Non, peu intéressé·e
+  \item Non, pas du tout intéressé·e
+\end{itemize}
+
+\textbf{B9.} \textit{[Si non-utilisateur]} Quelle est la principale raison pour laquelle vous n'utilisez pas l'\gls{ia} générative ? \textit{(Une seule réponse)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Je ne connais pas ces outils
+  \item Je ne vois pas d'utilité pour mon travail/mes études
+  \item Je ne sais pas comment les utiliser
+  \item Je crains les problèmes d'intégrité académique ou éthique
+  \item Je ne fais pas confiance à la fiabilité des résultats
+  \item L'établissement n'a pas donné de règles claires
+  \item Autre raison : \underline{\hspace{4cm}}
+\end{itemize}
+
+\medskip
+
+\subsection{Section C — Outils et tâches}
+
+\textbf{C1.} Quels outils d'\gls{ia} générative utilisez-vous ? \textit{(Plusieurs réponses possibles)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item ChatGPT (OpenAI) — version gratuite
+  \item ChatGPT (OpenAI) — version payante (Plus, Team, Enterprise)
+  \item Claude (Anthropic)
+  \item Google Gemini
+  \item Microsoft Copilot (Bing Chat)
+  \item GitHub Copilot
+  \item DeepL (traduction)
+  \item Mistral AI
+  \item Perplexity
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\textbf{C2.} Pour quelles tâches utilisez-vous l'\gls{ia} générative ? \textit{(Plusieurs réponses possibles)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Recherche d'information et documentation
+  \item Rédaction de textes (rapports, courriels, synthèses)
+  \item Résumé de documents longs
+  \item Traduction de textes
+  \item Génération ou complétion de code informatique
+  \item Débogage de code
+  \item Clarification de concepts théoriques
+  \item Génération d'exercices ou de questions d'examen
+  \item Création de supports visuels (diagrammes, schémas)
+  \item Aide à la correction ou à l'évaluation de travaux
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\textbf{C3.} Quelle proportion de votre production finale est générée directement par l'\gls{ia} ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item 0\% (je n'utilise l'\gls{ia} que pour des idées, pas pour la rédaction finale)
+  \item Moins de 25\%
+  \item Entre 25\% et 50\%
+  \item Entre 50\% et 75\%
+  \item Plus de 75\%
+\end{itemize}
+
+\textbf{C4.} Vérifiez-vous systématiquement les informations fournies par l'\gls{ia} générative ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Toujours
+  \item Souvent
+  \item Parfois
+  \item Rarement
+  \item Jamais
+\end{itemize}
+
+\medskip
+
+\subsection{Section D — Perceptions et attitudes}
+
+Les affirmations suivantes utilisent une échelle de Likert en 5 points : 1 = Pas du tout d'accord ; 2 = Plutôt pas d'accord ; 3 = Neutre ; 4 = Plutôt d'accord ; 5 = Tout à fait d'accord.
+
+\textbf{D1.} L'utilisation de l'\gls{ia} générative améliore ma productivité.
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5
+\end{itemize}
+
+\textbf{D2.} Apprendre à utiliser l'\gls{ia} générative est facile pour moi.
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5
+\end{itemize}
+
+\textbf{D3.} Je fais confiance aux informations fournies par l'\gls{ia} générative.
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5
+\end{itemize}
+
+\textbf{D4.} Mes enseignants/collègues encouragent l'utilisation de l'\gls{ia} générative.
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5
+\end{itemize}
+
+\textbf{D5.} J'ai l'intention d'utiliser davantage l'\gls{ia} générative à l'avenir.
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5
+\end{itemize}
+
+\textbf{D6.} Je suis confiant·e dans ma capacité à utiliser l'\gls{ia} générative efficacement.
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5
+\end{itemize}
+
+\textbf{D7.} Je sais comment vérifier la fiabilité des réponses de l'\gls{ia} générative.
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5
+\end{itemize}
+
+\textbf{D8.} L'\gls{ia} générative représente une opportunité pour mon travail/mes études.
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5
+\end{itemize}
+
+\textbf{D9.} L'\gls{ia} générative représente une menace pour mon travail/mes études.
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5
+\end{itemize}
+
+\textbf{D10.} Je suis préoccupé·e par les inexactitudes (hallucinations) de l'\gls{ia} générative.
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5
+\end{itemize}
+
+\medskip
+
+\subsection{Section E — Freins et besoins}
+
+\textbf{E1.} Quels sont les principaux freins à votre utilisation de l'\gls{ia} générative ? \textit{(Plusieurs réponses possibles)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Manque de formation
+  \item Incertitude sur les règles d'usage autorisées
+  \item Crainte de problèmes d'intégrité académique ou déontologique
+  \item Manque de confiance dans la fiabilité des résultats
+  \item Préoccupations sur la confidentialité des données
+  \item Temps nécessaire pour apprendre à utiliser ces outils
+  \item Absence de soutien de ma hiérarchie ou de mes enseignants
+  \item Coût des versions payantes
+  \item Impact environnemental
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\textbf{E2.} Quels types de formation souhaiteriez-vous recevoir sur l'\gls{ia} générative ? \textit{(Plusieurs réponses possibles)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Introduction générale aux outils disponibles
+  \item Ingénierie de prompts (formulation de requêtes efficaces)
+  \item Usages éthiques et respect de l'intégrité académique
+  \item Vérification de la fiabilité des résultats
+  \item Applications spécifiques à ma discipline/mon métier
+  \item Sécurité et confidentialité des données
+  \item Impact environnemental et sobriété numérique
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\textbf{E3.} Quelle modalité de formation préféreriez-vous ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Formation en ligne asynchrone (MOOC, vidéos)
+  \item Ateliers en présentiel (2-4 heures)
+  \item Formation par les pairs (collègues/étudiants référents)
+  \item Ressources documentaires (guides, fiches pratiques)
+  \item Webinaires interactifs
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\medskip
+
+\subsection{Section F — Questions spécifiques}
+
+\subsubsection{Version Étudiants}
+
+\textbf{F1.} Utilisez-vous GitHub Copilot ou un assistant de code similaire pour vos projets informatiques ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, régulièrement
+  \item Oui, occasionnellement
+  \item Non, mais je connais cet outil
+  \item Non, je ne connais pas cet outil
+  \item Non concerné (je ne code pas)
+\end{itemize}
+
+\textbf{F2.} \textit{[Si utilisateur de code assisté]} Vérifiez-vous systématiquement le code généré par l'\gls{ia} avant de l'utiliser ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Toujours
+  \item Souvent
+  \item Parfois
+  \item Rarement
+  \item Jamais
+\end{itemize}
+
+\textbf{F3.} Avez-vous déjà uploadé des données issues de projets industriels ou de stages dans un outil d'\gls{ia} générative public (ChatGPT, Claude, etc.) ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui
+  \item Non
+  \item Je ne sais pas
+  \item Non concerné (je n'ai pas encore de projet industriel ou stage)
+\end{itemize}
+
+\textbf{F4.} Êtes-vous conscient·e des risques liés à la confidentialité lorsque vous utilisez des outils d'\gls{ia} publics pour des données de projets industriels ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, tout à fait
+  \item Oui, plutôt
+  \item Non, plutôt pas
+  \item Non, pas du tout
+\end{itemize}
+
+\textbf{F5.} Considérez-vous que l'usage de l'\gls{ia} générative pour rédiger un devoir est une forme de triche ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, dans tous les cas
+  \item Oui, si l'enseignant ne l'a pas autorisé
+  \item Non, si on déclare son usage
+  \item Non, jamais
+  \item Je ne sais pas
+\end{itemize}
+
+\textbf{F6.} Avez-vous déjà ressenti de l'anxiété ou de la culpabilité à utiliser l'\gls{ia} générative pour vos études ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, souvent
+  \item Oui, parfois
+  \item Non, rarement
+  \item Non, jamais
+\end{itemize}
+
+\subsubsection{Version Enseignants-chercheurs}
+
+\textbf{F1.} Utilisez-vous l'\gls{ia} générative pour préparer vos enseignements ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, régulièrement
+  \item Oui, occasionnellement
+  \item Non, jamais
+\end{itemize}
+
+\textbf{F2.} \textit{[Si oui]} Pour quelles tâches pédagogiques ? \textit{(Plusieurs réponses possibles)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Préparation de supports de cours
+  \item Création d'exercices ou de questions d'examen
+  \item Génération d'exemples ou de cas d'étude
+  \item Aide à la correction de travaux étudiants
+  \item Traduction de ressources pédagogiques
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\textbf{F3.} Utilisez-vous l'\gls{ia} générative dans vos activités de recherche ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, régulièrement
+  \item Oui, occasionnellement
+  \item Non, jamais
+\end{itemize}
+
+\textbf{F4.} \textit{[Si oui]} Pour quelles activités de recherche ? \textit{(Plusieurs réponses possibles)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Revue de littérature et veille scientifique
+  \item Rédaction d'articles ou de rapports
+  \item Génération ou débogage de code de traitement de données
+  \item Traduction d'articles
+  \item Aide à la formulation d'hypothèses
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\textbf{F5.} Estimez-vous que vos étudiants utilisent l'\gls{ia} générative pour leurs travaux ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, la majorité (plus de 70\%)
+  \item Oui, environ la moitié (40-70\%)
+  \item Oui, une minorité (10-40\%)
+  \item Non, très peu (moins de 10\%)
+  \item Je ne sais pas
+\end{itemize}
+
+\textbf{F6.} Avez-vous adapté vos modalités d'évaluation en raison de l'\gls{ia} générative ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, substantiellement
+  \item Oui, légèrement
+  \item Non, pas encore
+  \item Non, je ne pense pas que ce soit nécessaire
+\end{itemize}
+
+\textbf{F7.} Seriez-vous prêt·e à devenir référent·e \gls{ia} pour accompagner vos collègues ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, volontiers
+  \item Oui, si je reçois une formation préalable
+  \item Non, je ne me sens pas compétent·e
+  \item Non, je n'ai pas le temps
+\end{itemize}
+
+\subsubsection{Version BIATSS}
+
+\textbf{F1.} Pour quelles tâches professionnelles l'\gls{ia} générative pourrait-elle vous aider ? \textit{(Plusieurs réponses possibles)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Rédaction de courriels, comptes rendus, rapports
+  \item Traitement et analyse de données
+  \item Organisation et planification
+  \item Recherche documentaire
+  \item Traduction de documents
+  \item Support utilisateurs (réponses aux questions récurrentes)
+  \item Je ne vois pas d'application à mon travail
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\textbf{F2.} Votre responsable hiérarchique vous encourage-t-il à utiliser l'\gls{ia} générative ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, activement
+  \item Oui, mais sans accompagnement
+  \item Non, ce sujet n'a jamais été évoqué
+  \item Non, il/elle y est opposé·e
+\end{itemize}
+
+\textbf{F3.} Avez-vous accès à des outils d'\gls{ia} générative fournis par l'établissement ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui
+  \item Non
+  \item Je ne sais pas
+\end{itemize}
+
+\textbf{F4.} Êtes-vous inquiet·ète de l'impact de l'\gls{ia} sur votre emploi ou votre rémunération ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, très inquiet·ète
+  \item Oui, plutôt inquiet·ète
+  \item Non, plutôt pas inquiet·ète
+  \item Non, pas du tout inquiet·ète
+\end{itemize}
+
+\textbf{F5.} Pensez-vous que l'\gls{ia} générative pourrait améliorer votre qualité de vie au travail (gain de temps, réduction des tâches répétitives) ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, certainement
+  \item Oui, probablement
+  \item Non, probablement pas
+  \item Non, certainement pas
+\end{itemize}
+
+\textbf{F6.} Avez-vous besoin d'un accompagnement managérial pour intégrer l'\gls{ia} dans vos pratiques professionnelles ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, absolument
+  \item Oui, plutôt
+  \item Non, plutôt pas
+  \item Non, pas du tout
+\end{itemize}
+
+\medskip
+
+\subsection{Section G — Clôture}
+
+\textbf{G1.} Quelles actions prioritaires Polytech devrait-elle mener concernant l'\gls{ia} générative ? \textit{(Plusieurs réponses possibles)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Définir des règles claires d'usage
+  \item Proposer des formations pour tous les personnels
+  \item Fournir des outils institutionnels sécurisés
+  \item Créer un réseau de référents \gls{ia} par département
+  \item Adapter les modalités d'évaluation des étudiants
+  \item Sensibiliser aux enjeux éthiques et environnementaux
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\textbf{G2.} Avez-vous des suggestions ou des commentaires complémentaires sur l'usage de l'\gls{ia} générative à Polytech ?
+
+\vspace{3cm}
+
+\textbf{G3.} Accepteriez-vous d'être contacté·e pour un entretien complémentaire ou pour participer à un groupe de travail sur l'\gls{ia} ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui $\rightarrow$ Votre adresse courriel : \underline{\hspace{5cm}}
+  \item Non
+\end{itemize}
+
+\bigskip
+
+\noindent\textit{Merci pour votre participation. Vos réponses contribueront à adapter l'accompagnement institutionnel aux besoins réels de la communauté Polytech.}

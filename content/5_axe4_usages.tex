@@ -56,7 +56,54 @@ En génie civil, l'adoption demeure émergente, fortement freinée par les exige
 
 \medskip
 
-Les usages disciplinaires documentés confirment le potentiel pédagogique de l'\gls{ia} générative, mais révèlent aussi des limites techniques et des risques professionnels non négligeables. Cette adoption différenciée s'explique par une série de freins psychologiques, organisationnels et institutionnels que les enquêtes nationales ont identifiés. L'analyse comparative des écoles d'ingénieurs et des écoles de commerce révèle par ailleurs un retard structurel de gouvernance dans les premières. Quels sont les leviers documentés pour accompagner efficacement l'appropriation de l'\gls{ia} générative ?
+Les usages disciplinaires documentés confirment le potentiel pédagogique de l'\gls{ia} générative, mais révèlent aussi des limites techniques et des risques professionnels non négligeables. Ces spécificités des écoles d'ingénieurs — gains mesurables en informatique, limites critiques en calculs numériques, prudence en génie civil, enjeux de confidentialité industrielle — justifient une enquête locale adaptée au contexte de Polytech. Bien que les enquêtes nationales récentes (n=30~000 répondants pour le questionnaire ministériel, n=5~074 pour l'enquête CGE) fournissent des données robustes sur l'enseignement supérieur français, plusieurs lacunes demeurent. Aucune enquête n'a été conduite au sein du réseau Polytech (15 écoles), les réseaux comparables (INSA, UTC) disposent de peu de données accessibles, et la granularité par spécialité d'ingénieur demeure insuffisante pour distinguer les besoins spécifiques en informatique, mécanique, génie civil ou environnement. Les usages des personnels BIATSS dans l'\gls{esr} français sont très peu documentés, et les spécificités de l'alternance — avec l'exposition des étudiants aux pratiques \gls{ia} en entreprise — n'ont fait l'objet d'aucune étude systématique.
+
+Une enquête interne à Polytech Annecy-Chambéry est donc prévue au premier semestre 2026 (Recommandation R2). Quatre objectifs la structurent : comparer les pratiques locales aux données nationales en reprenant les items standardisés, identifier les champions \gls{ia} potentiels au sein de chaque département pour structurer un accompagnement par les pairs, prioriser les formations selon les freins réels documentés pour chaque public, et documenter les enjeux spécifiques aux écoles d'ingénieurs absents des enquêtes génériques. Le questionnaire adopte une architecture modulaire garantissant à la fois la comparabilité nationale et l'adaptation locale : un tronc commun de 42 items (sections A à E) couvre le profil, les usages, les outils, les perceptions et les freins pour tous les répondants, suivi d'une branche spécifique de 8 items différenciée selon le profil déclaré (section F), puis d'une clôture commune (section G). La figure~\ref{fig:flux_questionnaire} présente le flux des questions, dont le détail complet figure en Annexe~\ref{annexe:questionnaire}~\cite{pascal2025ia,cge2024enquete}.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    box/.style={rectangle, draw, rounded corners, minimum width=4.5cm, minimum height=1cm, align=center, fill=white, thick},
+    smallbox/.style={rectangle, draw, rounded corners, minimum width=3.8cm, minimum height=0.9cm, align=center, fill=white},
+    branch/.style={rectangle, draw, rounded corners, minimum width=3.5cm, minimum height=0.8cm, align=center, fill=gray!10},
+    arrow/.style={->, >=stealth, thick}
+]
+
+% Tronc commun
+\node[box] (tronc) {\textbf{Tronc commun (A-E)} \\ Profil, Usages, Outils, \\ Perceptions, Freins};
+
+% Noeud de branchement
+\node[smallbox, below=of tronc] (branch) {Identification du profil};
+
+% Trois branches parallèles
+\node[branch, below left=1.2cm and 2cm of branch] (etu) {\textbf{Étudiants} \\ Discipline, projets, \\ code, confidentialité};
+\node[branch, below=1.8cm of branch] (ec) {\textbf{Enseignants-chercheurs} \\ Pédagogie, recherche, \\ référent IA};
+\node[branch, below right=1.2cm and 2cm of branch] (biatss) {\textbf{BIATSS} \\ Tâches admin, soutien \\ hiérarchie, emploi};
+
+% Convergence
+\node[box, below=2.2cm of ec] (cloture) {\textbf{Questions de clôture (G)} \\ Besoins formation, suggestions, \\ volonté de participation};
+
+% Flèches
+\draw[arrow] (tronc) -- (branch);
+\draw[arrow] (branch) -- (etu);
+\draw[arrow] (branch) -- (ec);
+\draw[arrow] (branch) -- (biatss);
+\draw[arrow] (etu) -- (cloture);
+\draw[arrow] (ec) -- (cloture);
+\draw[arrow] (biatss) -- (cloture);
+
+% Annotation finale
+\node[below=0.3cm of cloture, align=center, font=\small\itshape] {Questionnaire détaillé : Annexe~\ref{annexe:questionnaire}};
+
+\end{tikzpicture}
+\caption{Architecture du questionnaire : flux des questions par public}
+\label{fig:flux_questionnaire}
+\end{figure}
+
+\bigskip
+
+Cette adoption différenciée s'explique par une série de freins psychologiques, organisationnels et institutionnels que les enquêtes nationales ont identifiés. L'analyse comparative des écoles d'ingénieurs et des écoles de commerce révèle par ailleurs un retard structurel de gouvernance dans les premières. Quels sont les leviers documentés pour accompagner efficacement l'appropriation de l'\gls{ia} générative ?
 
 \subsection{Freins, leviers et écarts structurels}
 
